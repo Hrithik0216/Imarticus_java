@@ -1,0 +1,567 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "main",
+            "request": "launch",
+            "mainClass": "RealTimeClassObj.main",
+            "projectName": "Imarticus vs code_b5c916ca"
+        },
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Private_Class",
+            "request": "launch",
+            "mainClass": "Access_modifiers.Private_Class",
+            "projectName": "Imarticus vs code_b5c916ca"
+        },
+        {
+            "type": "java",
+            "name": "Default_Modifier",
+            "request": "launch",
+            "mainClass": "Access_modifiers.sub_modifiers.Default_Modifier",
+            "projectName": "Imarticus vs code_b5c916ca"
+        },
+        {
+            "type": "java",
+            "name": "Static_Constructor",
+            "request": "launch",
+            "mainClass": "Access_modifiers.sub_modifiers.Static_Constructor",
+            "projectName": "Imarticus vs code_b5c916ca"
+        },
+        {
+            "type": "java",
+            "name": "Addition",
+            "request": "launch",
+            "mainClass": "Array2D.Addition",
+            "projectName": "Imarticus vs code_b5c916ca"
+        },
+        {
+            "type": "java",
+            "name": "Ex",
+            "request": "launch",
+            "mainClass": "Array2D.Ex",
+            "projectName": "Imarticus vs code_b5c916ca"
+        },
+        {
+            "type": "java",
+            "name": "Ex2",
+            "request": "launch",
+            "mainClass": "Array2D.Ex2",
+            "projectName": "Imarticus vs code_b5c916ca"
+        },
+        {
+            "type": "java",
+            "name": "DuplicateArray",
+            "request": "launch",
+            "mainClass": "ArrayProblems.DuplicateArray",
+            "projectName": "Imarticus vs code_b5c916ca"
+        },
+        {
+            "type": "java",
+            "name": "FindOccurance",
+            "request": "launch",
+            "mainClass": "ArrayProblems.FindOccurance",
+            "projectName": "Imarticus vs code_b5c916ca"
+        },
+        {
+            "type": "java",
+            "name": "LargestElement",
+            "request": "launch",
+            "mainClass": "ArrayProblems.LargestElement",
+            "projectName": "Imarticus vs code_b5c916ca"
+        },
+        {
+            "type": "java",
+            "name": "RemoveDuplicateElements",
+            "request": "launch",
+            "mainClass": "ArrayProblems.RemoveDuplicateElements",
+            "projectName": "Imarticus vs code_b5c916ca"
+        },
+        {
+            "type": "java",
+            "name": "SecondLargest",
+            "request": "launch",
+            "mainClass": "ArrayProblems.SecondLargest",
+            "projectName": "Imarticus vs code_b5c916ca"
+        },
+        {
+            "type": "java",
+            "name": "SeparateoddEven",
+            "request": "launch",
+            "mainClass": "ArrayProblems.SeparateoddEven",
+            "projectName": "Imarticus vs code_b5c916ca"
+        },
+        {
+            "type": "java",
+            "name": "seperateOddEven",
+            "request": "launch",
+            "mainClass": "ArrayProblems.seperateOddEven",
+            "projectName": "Imarticus vs code_b5c916ca"
+        },
+        {
+            "type": "java",
+            "name": "FirstPosition",
+            "request": "launch",
+            "mainClass": "CharacterMethods.FirstPosition",
+            "projectName": "Imarticus vs code_b5c916ca"
+        },
+        {
+            "type": "java",
+            "name": "Methods",
+            "request": "launch",
+            "mainClass": "CharacterMethods.Methods",
+            "projectName": "Imarticus vs code_b5c916ca"
+        },
+        {
+            "type": "java",
+            "name": "First",
+            "request": "launch",
+            "mainClass": "ClassObjects.First",
+            "projectName": "Imarticus vs code_b5c916ca"
+        },
+        {
+            "type": "java",
+            "name": "GetSet",
+            "request": "launch",
+            "mainClass": "ClassObjects.GetSet",
+            "projectName": "Imarticus vs code_b5c916ca"
+        },
+        {
+            "type": "java",
+            "name": "Sample",
+            "request": "launch",
+            "mainClass": "ClassObjects.Sample",
+            "projectName": "Imarticus vs code_b5c916ca"
+        },
+        {
+            "type": "java",
+            "name": "vehicle",
+            "request": "launch",
+            "mainClass": "ClassObjects.vehicle",
+            "projectName": "Imarticus vs code_b5c916ca"
+        },
+        {
+            "type": "java",
+            "name": "PalindromeNumber",
+            "request": "launch",
+            "mainClass": "LeetCode.PalindromeNumber",
+            "projectName": "Imarticus vs code_b5c916ca"
+        },
+        {
+            "type": "java",
+            "name": "Queuing",
+            "request": "launch",
+            "mainClass": "List.Queuing",
+            "projectName": "Imarticus vs code_b5c916ca"
+        },
+        {
+            "type": "java",
+            "name": "sample",
+            "request": "launch",
+            "mainClass": "List.sample",
+            "projectName": "Imarticus vs code_b5c916ca"
+        },
+        {
+            "type": "java",
+            "name": "ConstructorEx",
+            "request": "launch",
+            "mainClass": "LogicFirst.ConstructorEx",
+            "projectName": "Imarticus vs code_b5c916ca"
+        },
+        {
+            "type": "java",
+            "name": "MethodInvoke",
+            "request": "launch",
+            "mainClass": "LogicFirst.MethodInvoke",
+            "projectName": "Imarticus vs code_b5c916ca"
+        },
+        {
+            "type": "java",
+            "name": "ReturnObjects",
+            "request": "launch",
+            "mainClass": "LogicFirst.ReturnObjects",
+            "projectName": "Imarticus vs code_b5c916ca"
+        },
+        {
+            "type": "java",
+            "name": "Num",
+            "request": "launch",
+            "mainClass": "Numbers.Num",
+            "projectName": "Imarticus vs code_b5c916ca"
+        },
+        {
+            "type": "java",
+            "name": "Prime",
+            "request": "launch",
+            "mainClass": "Numbers.Prime",
+            "projectName": "Imarticus vs code_b5c916ca"
+        },
+        {
+            "type": "java",
+            "name": "AbundantNum",
+            "request": "launch",
+            "mainClass": "Pattern.AbundantNum",
+            "projectName": "Imarticus vs code_b5c916ca"
+        },
+        {
+            "type": "java",
+            "name": "Atm",
+            "request": "launch",
+            "mainClass": "Pattern.Atm",
+            "projectName": "Imarticus vs code_b5c916ca"
+        },
+        {
+            "type": "java",
+            "name": "FindIfExist",
+            "request": "launch",
+            "mainClass": "Pattern.FindIfExist",
+            "projectName": "Imarticus vs code_b5c916ca"
+        },
+        {
+            "type": "java",
+            "name": "Floyds",
+            "request": "launch",
+            "mainClass": "Pattern.Floyds",
+            "projectName": "Imarticus vs code_b5c916ca"
+        },
+        {
+            "type": "java",
+            "name": "MixedSeries",
+            "request": "launch",
+            "mainClass": "Pattern.MixedSeries",
+            "projectName": "Imarticus vs code_b5c916ca"
+        },
+        {
+            "type": "java",
+            "name": "MixedSeries2",
+            "request": "launch",
+            "mainClass": "Pattern.MixedSeries2",
+            "projectName": "Imarticus vs code_b5c916ca"
+        },
+        {
+            "type": "java",
+            "name": "NeonNumber",
+            "request": "launch",
+            "mainClass": "Pattern.NeonNumber",
+            "projectName": "Imarticus vs code_b5c916ca"
+        },
+        {
+            "type": "java",
+            "name": "NumSwap",
+            "request": "launch",
+            "mainClass": "Pattern.NumSwap",
+            "projectName": "Imarticus vs code_b5c916ca"
+        },
+        {
+            "type": "java",
+            "name": "Number",
+            "request": "launch",
+            "mainClass": "Pattern.Number",
+            "projectName": "Imarticus vs code_b5c916ca"
+        },
+        {
+            "type": "java",
+            "name": "NumberPyramid",
+            "request": "launch",
+            "mainClass": "Pattern.NumberPyramid",
+            "projectName": "Imarticus vs code_b5c916ca"
+        },
+        {
+            "type": "java",
+            "name": "Palindrome",
+            "request": "launch",
+            "mainClass": "Pattern.Palindrome",
+            "projectName": "Imarticus vs code_b5c916ca"
+        },
+        {
+            "type": "java",
+            "name": "PalindromeString",
+            "request": "launch",
+            "mainClass": "Pattern.PalindromeString",
+            "projectName": "Imarticus vs code_b5c916ca"
+        },
+        {
+            "type": "java",
+            "name": "Patterns",
+            "request": "launch",
+            "mainClass": "Pattern.Patterns",
+            "projectName": "Imarticus vs code_b5c916ca"
+        },
+        {
+            "type": "java",
+            "name": "PerfectSquare",
+            "request": "launch",
+            "mainClass": "Pattern.PerfectSquare",
+            "projectName": "Imarticus vs code_b5c916ca"
+        },
+        {
+            "type": "java",
+            "name": "PetersonNum",
+            "request": "launch",
+            "mainClass": "Pattern.PetersonNum",
+            "projectName": "Imarticus vs code_b5c916ca"
+        },
+        {
+            "type": "java",
+            "name": "Pyramid",
+            "request": "launch",
+            "mainClass": "Pattern.Pyramid",
+            "projectName": "Imarticus vs code_b5c916ca"
+        },
+        {
+            "type": "java",
+            "name": "Sunny_Number",
+            "request": "launch",
+            "mainClass": "Pattern.Sunny_Number",
+            "projectName": "Imarticus vs code_b5c916ca"
+        },
+        {
+            "type": "java",
+            "name": "SwapOrder",
+            "request": "launch",
+            "mainClass": "Pattern.SwapOrder",
+            "projectName": "Imarticus vs code_b5c916ca"
+        },
+        {
+            "type": "java",
+            "name": "Ticket",
+            "request": "launch",
+            "mainClass": "Pattern.Ticket",
+            "projectName": "Imarticus vs code_b5c916ca"
+        },
+        {
+            "type": "java",
+            "name": "gcd",
+            "request": "launch",
+            "mainClass": "Pattern.gcd",
+            "projectName": "Imarticus vs code_b5c916ca"
+        },
+        {
+            "type": "java",
+            "name": "swapCharacters",
+            "request": "launch",
+            "mainClass": "Pattern.swapCharacters",
+            "projectName": "Imarticus vs code_b5c916ca"
+        },
+        {
+            "type": "java",
+            "name": "SquareHollowPattern",
+            "request": "launch",
+            "mainClass": "PatternGeekForGeeks.SquareHollowPattern",
+            "projectName": "Imarticus vs code_b5c916ca"
+        },
+        {
+            "type": "java",
+            "name": "String1",
+            "request": "launch",
+            "mainClass": "String.String1",
+            "projectName": "Imarticus vs code_b5c916ca"
+        },
+        {
+            "type": "java",
+            "name": "String2",
+            "request": "launch",
+            "mainClass": "String.String2",
+            "projectName": "Imarticus vs code_b5c916ca"
+        },
+        {
+            "type": "java",
+            "name": "AreaOfTriangle",
+            "request": "launch",
+            "mainClass": "TestCases.AreaOfTriangle",
+            "projectName": "Imarticus vs code_b5c916ca"
+        },
+        {
+            "type": "java",
+            "name": "ArmStrong",
+            "request": "launch",
+            "mainClass": "TestCases.ArmStrong",
+            "projectName": "Imarticus vs code_b5c916ca"
+        },
+        {
+            "type": "java",
+            "name": "Array",
+            "request": "launch",
+            "mainClass": "TestCases.Array",
+            "projectName": "Imarticus vs code_b5c916ca"
+        },
+        {
+            "type": "java",
+            "name": "ArrayOddNum",
+            "request": "launch",
+            "mainClass": "TestCases.ArrayOddNum",
+            "projectName": "Imarticus vs code_b5c916ca"
+        },
+        {
+            "type": "java",
+            "name": "BoxPattern",
+            "request": "launch",
+            "mainClass": "TestCases.BoxPattern",
+            "projectName": "Imarticus vs code_b5c916ca"
+        },
+        {
+            "type": "java",
+            "name": "Calculator",
+            "request": "launch",
+            "mainClass": "TestCases.Calculator",
+            "projectName": "Imarticus vs code_b5c916ca"
+        },
+        {
+            "type": "java",
+            "name": "Factorial",
+            "request": "launch",
+            "mainClass": "TestCases.Factorial",
+            "projectName": "Imarticus vs code_b5c916ca"
+        },
+        {
+            "type": "java",
+            "name": "Fibonacci",
+            "request": "launch",
+            "mainClass": "TestCases.Fibonacci",
+            "projectName": "Imarticus vs code_b5c916ca"
+        },
+        {
+            "type": "java",
+            "name": "InvAndNorTri",
+            "request": "launch",
+            "mainClass": "TestCases.InvAndNorTri",
+            "projectName": "Imarticus vs code_b5c916ca"
+        },
+        {
+            "type": "java",
+            "name": "NatNum",
+            "request": "launch",
+            "mainClass": "TestCases.NatNum",
+            "projectName": "Imarticus vs code_b5c916ca"
+        },
+        {
+            "type": "java",
+            "name": "Floyds(1)",
+            "request": "launch",
+            "mainClass": "TestCases.NumberPattern.Floyds",
+            "projectName": "Imarticus vs code_b5c916ca"
+        },
+        {
+            "type": "java",
+            "name": "Number(1)",
+            "request": "launch",
+            "mainClass": "TestCases.NumberPattern.Number",
+            "projectName": "Imarticus vs code_b5c916ca"
+        },
+        {
+            "type": "java",
+            "name": "Number2",
+            "request": "launch",
+            "mainClass": "TestCases.NumberPattern.Number2",
+            "projectName": "Imarticus vs code_b5c916ca"
+        },
+        {
+            "type": "java",
+            "name": "Oops",
+            "request": "launch",
+            "mainClass": "TestCases.Oops",
+            "projectName": "Imarticus vs code_b5c916ca"
+        },
+        {
+            "type": "java",
+            "name": "ReverseAnything",
+            "request": "launch",
+            "mainClass": "TestCases.ReverseAnything",
+            "projectName": "Imarticus vs code_b5c916ca"
+        },
+        {
+            "type": "java",
+            "name": "Salary",
+            "request": "launch",
+            "mainClass": "TestCases.Salary",
+            "projectName": "Imarticus vs code_b5c916ca"
+        },
+        {
+            "type": "java",
+            "name": "SpyNumber",
+            "request": "launch",
+            "mainClass": "TestCases.SpyNumber",
+            "projectName": "Imarticus vs code_b5c916ca"
+        },
+        {
+            "type": "java",
+            "name": "SumNat",
+            "request": "launch",
+            "mainClass": "TestCases.SumNat",
+            "projectName": "Imarticus vs code_b5c916ca"
+        },
+        {
+            "type": "java",
+            "name": "SumOfDigits",
+            "request": "launch",
+            "mainClass": "TestCases.SumOfDigits",
+            "projectName": "Imarticus vs code_b5c916ca"
+        },
+        {
+            "type": "java",
+            "name": "Tables",
+            "request": "launch",
+            "mainClass": "TestCases.Tables",
+            "projectName": "Imarticus vs code_b5c916ca"
+        },
+        {
+            "type": "java",
+            "name": "TechNumber",
+            "request": "launch",
+            "mainClass": "TestCases.TechNumber",
+            "projectName": "Imarticus vs code_b5c916ca"
+        },
+        {
+            "type": "java",
+            "name": "Vowel",
+            "request": "launch",
+            "mainClass": "TestCases.Vowel",
+            "projectName": "Imarticus vs code_b5c916ca"
+        },
+        {
+            "type": "java",
+            "name": "ZPattern",
+            "request": "launch",
+            "mainClass": "TestCases.ZPattern",
+            "projectName": "Imarticus vs code_b5c916ca"
+        },
+        {
+            "type": "java",
+            "name": "test",
+            "request": "launch",
+            "mainClass": "TestCases.test",
+            "projectName": "Imarticus vs code_b5c916ca"
+        },
+        {
+            "type": "java",
+            "name": "Classes",
+            "request": "launch",
+            "mainClass": "oops.Classes",
+            "projectName": "Imarticus vs code_b5c916ca"
+        },
+        {
+            "type": "java",
+            "name": "Recursion",
+            "request": "launch",
+            "mainClass": "oops.Recursion",
+            "projectName": "Imarticus vs code_b5c916ca"
+        },
+        {
+            "type": "java",
+            "name": "SetGet$main",
+            "request": "launch",
+            "mainClass": "oops.SetGet$main",
+            "projectName": "Imarticus vs code_b5c916ca"
+        }
+    ]
+}
