@@ -36,6 +36,42 @@ public class Sampla {
         node.next = head;
         tail=node;
     }
+    public void deleteFirst() {
+        if (head == null) {
+            System.out.println("The list is empty. Cannot delete from an empty list.");
+            return;
+        }
+
+        if (head == tail) {
+            // If there is only one element in the list.
+            head = null;
+            tail = null;
+        } else {
+            head = head.next;
+            tail.next = head;
+        }
+        size -= 1;
+    }
+    public void deleteLast() {
+        if (head == null) {
+            System.out.println("The list is empty. Cannot delete from an empty list.");
+            return;
+        }
+
+        if (head == tail) {
+            // If there is only one element in the list.
+            head = null;
+            tail = null;
+        } else {
+            Node current = head;
+            while (current.next != tail) {
+                current = current.next;
+            }
+            current.next = head;
+            tail = current;
+        }
+        size -= 1;
+    }
    
 
     public void display(){
