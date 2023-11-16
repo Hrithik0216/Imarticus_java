@@ -17,6 +17,5 @@ public class Example {
         System.out.println(queue);
        System.out.println( queue.element());
        System.out.println(queue.getClass());
-       queue.
     }
 }
