@@ -64,7 +64,7 @@ public class Exp {
         return val;
     }
 
-    //get index value
+    //get index value as node
     public Node get(int index){
         Node node = head;
         for(int i =0; i<index;i++){
