@@ -14,6 +14,5 @@ public class Execute {
         list.deleteLast();
         list.delete(1);
         list.display();
-        
     }
 }
