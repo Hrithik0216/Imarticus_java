@@ -1,39 +1,37 @@
-package LinkedListFinal.Circular_Linked_List;
+package KunalOOPS;
 
-public class Exp1 {
-    private Node head;
-    private Node tail;
-    private int size;
+import java.util.LinkedList;
 
-    public Exp1() {
-        this.size = 0;
+public class Parent{
+    protected Node head;
+    protected Node tail;
+    protected static int size;
+
+    public Parent() {
+        super();
+        Parent.size = 0;
     }
 
     // Insertion
     // Insert First
     public void insertFirst(int value) {
         Node node = new Node(value);
-        if (head == null) {
-            head = node;
-            tail = node;
-            tail.next = head;
-        } else {
-            node.next = head;
-            head = node;
-            tail.next = node;
-            size += 1;
+        if (tail == null) {
+            tail = head;
         }
+        node.next = head;
+        head = node;
+        size += 1;
     }
 
     // insert Last
     public void insertlast(int value) {
         Node node = new Node(value);
-        if (tail == head) {
+        if (tail == null) {
             insertFirst(value);
             return;
         }
         tail.next = node;
-        node.next = head;
         tail = node;
         size += 1;
     }
@@ -83,10 +81,10 @@ public class Exp1 {
         if (size <= 1) {
             return deleteFirst();
         }
-        Node secondLast = get(size - 1);
+        Node secondLast = get(size - 2);
         int val = tail.value;
         tail = secondLast;
-        tail.next = head;
+        tail.next = null;
         return val;
     }
 
@@ -106,22 +104,17 @@ public class Exp1 {
 
     // Display
     public void display() {
-        if (head == null) {
-            System.out.println("List is empty");
-        }
         Node temp = head;
-        do {
+        while (temp != null) {
             System.out.print(temp.value + " --> ");
             temp = temp.next;
-        } while (temp != head);
-        {
-            System.out.println("END");
         }
+        System.out.println("END");
     }
 
-    private class Node {
-        private int value;
-        private Node next;
+    public class Node {
+        int value;
+        Node next;
 
         public Node(int value) {
             this.value = value;

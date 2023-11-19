@@ -1,16 +1,12 @@
-package LinkedListFinal.Circular_Linked_List;
+package KunalOOPS;
 
-public class Exp1 {
-    private Node head;
-    private Node tail;
-    private int size;
-
-    public Exp1() {
-        this.size = 0;
+public class Child extends Parent {
+    public Child(int size) {
+        super();
     }
 
-    // Insertion
-    // Insert First
+    // insert Firt
+    @Override
     public void insertFirst(int value) {
         Node node = new Node(value);
         if (head == null) {
@@ -24,8 +20,8 @@ public class Exp1 {
             size += 1;
         }
     }
-
-    // insert Last
+    //insert last
+    @Override
     public void insertlast(int value) {
         Node node = new Node(value);
         if (tail == head) {
@@ -39,6 +35,7 @@ public class Exp1 {
     }
 
     // insert
+    @Override
     public void insert(int value, int index) {
         if (index == 0) {
             insertFirst(value);
@@ -59,6 +56,7 @@ public class Exp1 {
 
     // Deletion
     // Delete first
+    @Override
     public int deleteFirst() {
         int val = head.value;
         head = head.next;
@@ -70,6 +68,7 @@ public class Exp1 {
     }
 
     // get index value as node
+    @Override
     public Node get(int index) {
         Node node = head;
         for (int i = 0; i < index; i++) {
@@ -79,6 +78,7 @@ public class Exp1 {
     }
 
     // Delete last
+    @Override
     public int deleteLast() {
         if (size <= 1) {
             return deleteFirst();
@@ -91,6 +91,7 @@ public class Exp1 {
     }
 
     // delete
+    @Override
     public int delete(int index) {
         if (index == 0) {
             return deleteFirst();
@@ -103,8 +104,7 @@ public class Exp1 {
         prev.next = prev.next.next;
         return val;
     }
-
-    // Display
+    @Override
     public void display() {
         if (head == null) {
             System.out.println("List is empty");
@@ -119,17 +119,22 @@ public class Exp1 {
         }
     }
 
-    private class Node {
-        private int value;
-        private Node next;
+    public class ChildNode extends Node {
 
-        public Node(int value) {
-            this.value = value;
+        public ChildNode(int value) {
+            super(value);
         }
 
-        public Node(int value, Node next) {
-            this.value = value;
-            this.next = next;
+        public ChildNode(int value, Node next) {
+            super(value, next);
         }
+    }
+
+    public static void main(String[] args) {
+        Child ob1 = new Child(size);
+        ob1.insertFirst(25);
+        ob1.insertlast(5);
+        ob1.insert(4, 2);
+        ob1.display();
     }
 }

@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Encapsulation",
+            "request": "launch",
+            "mainClass": "KunalOOPS.Encapsulation",
+            "projectName": "Imarticus vs code_b5c916ca"
+        },
+        {
+            "type": "java",
             "name": "main",
             "request": "launch",
             "mainClass": "RealTimeClassObj.main",
