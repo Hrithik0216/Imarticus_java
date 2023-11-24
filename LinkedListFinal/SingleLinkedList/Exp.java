@@ -61,6 +61,7 @@ public class Exp {
             tail = null;
             size--;
         }
+        size--;
         return val;
     }
 

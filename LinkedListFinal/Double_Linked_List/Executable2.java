@@ -8,7 +8,9 @@ public class Executable2 {
         list.insertFirst(35);
         list.insertFirst(40);
         list.insertFirst(45);
+        list.inserLast(77);
+        list.inserLast(78);
         list.display();
-        list.displayRev();
+        //list.displayRev();
     }
 }

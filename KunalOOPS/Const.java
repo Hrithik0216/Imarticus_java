@@ -26,6 +26,7 @@ public class Const {
     }
     public static void main(String[] args) {
         Const ob1 = new Const("Hrithik", 1);
+        Const ob2 = new Const("HRithik", 2);
         Const ob2 = new Const(ob1);
         System.out.println("name: "+ob2.name+" age: "+ob2.age);
     }

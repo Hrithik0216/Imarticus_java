@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "ClassFunctions",
+            "request": "launch",
+            "mainClass": "TestCases.ClassFunctions",
+            "projectName": "Imarticus vs code_b5c916ca"
+        },
+        {
+            "type": "java",
             "name": "Encapsulation",
             "request": "launch",
             "mainClass": "KunalOOPS.Encapsulation",

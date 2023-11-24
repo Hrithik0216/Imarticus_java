@@ -1,18 +1,14 @@
-package LinkedListFinal.Double_Linked_List;
+package LinkedListFinal.Doubly_Circular_LL;
 
-import LinkedListFinal.SingleLinkedList.Exp;
-
-public class Exp2 {
+public class Exp {
     private Node head;
     private Node tail;
     private int data;
     private int size;
 
-    public Exp2() {
+    public Exp() {
         this.size = 0;
     }
-
-    // Insertion
     // Insert First
     public void insertFirst(int value) {
         Node node = new Node(value);
@@ -24,38 +20,12 @@ public class Exp2 {
             node.next = head;
             head.prev = node;
             head = node;
+            tail =node.prev ;
+            tail.next = head;
         }
 
         size += 1;
     }
-    //insert last
-    public void inserLast(int value){
-        Node node = new Node(value);
-        if(head==null){
-            insertFirst(value);
-            return;
-        }else{
-           
-            node.prev = tail;
-            tail.next = node;
-            tail = node;
-        }
-        size+=1;
-    }
-
-    // Display
-    public void displayRev() {
-
-        Node curr = tail;
-        while (curr != null) {
-            if (curr != null) {
-                System.out.print(curr.value + " --> ");
-            }
-            curr = curr.prev;
-        }
-        System.out.println("END");
-    }
-
     public void display() {
         Node curr = head;
         while (curr != null) {
@@ -80,5 +50,4 @@ public class Exp2 {
             this.next = next;
         }
     }
-
 }
