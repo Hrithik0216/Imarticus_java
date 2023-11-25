@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Execution",
+            "request": "launch",
+            "mainClass": "Trees.Execution",
+            "projectName": "Imarticus vs code_b5c916ca"
+        },
+        {
+            "type": "java",
+            "name": "Dutch_NationalFlag",
+            "request": "launch",
+            "mainClass": "Algorithm.Dutch_NationalFlag",
+            "projectName": "Imarticus vs code_b5c916ca"
+        },
+        {
+            "type": "java",
             "name": "ClassFunctions",
             "request": "launch",
             "mainClass": "TestCases.ClassFunctions",
