@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "FindEveryTargetElement",
+            "request": "launch",
+            "mainClass": "Recursion.FindEveryTargetElement",
+            "projectName": "Imarticus vs code_b5c916ca"
+        },
+        {
+            "type": "java",
+            "name": "FindIfSortedOrNot",
+            "request": "launch",
+            "mainClass": "Recursion.FindIfSortedOrNot",
+            "projectName": "Imarticus vs code_b5c916ca"
+        },
+        {
+            "type": "java",
             "name": "CountZeros",
             "request": "launch",
             "mainClass": "Recursion.CountZeros",
