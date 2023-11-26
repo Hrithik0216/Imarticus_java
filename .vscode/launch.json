@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CountZeros",
+            "request": "launch",
+            "mainClass": "Recursion.CountZeros",
+            "projectName": "Imarticus vs code_b5c916ca"
+        },
+        {
+            "type": "java",
             "name": "PalindromeNum",
             "request": "launch",
             "mainClass": "Recursion.PalindromeNum",
