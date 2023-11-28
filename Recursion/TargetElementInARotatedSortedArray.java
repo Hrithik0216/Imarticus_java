@@ -27,5 +27,5 @@ public class TargetElementInARotatedSortedArray {
         }else{
             return findTarget1(arr, s, mid, target);
         }
-    }
+    } 
 }

@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "QuickSort",
+            "request": "launch",
+            "mainClass": "Recursion.QuickSort",
+            "projectName": "Imarticus vs code_b5c916ca"
+        },
+        {
+            "type": "java",
             "name": "FindEveryTargetElement",
             "request": "launch",
             "mainClass": "Recursion.FindEveryTargetElement",
