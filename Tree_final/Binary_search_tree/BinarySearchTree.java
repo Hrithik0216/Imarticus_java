@@ -36,11 +36,11 @@ public class BinarySearchTree {
         if (root == null) {
             return new Node(value);
         }
-        if (value < root.key) {
-            root.left = insert(root.left, value);
-        }
         if (value > root.key) {
             root.right = insert(root.right, value);
+        }else {
+            // Handle duplicates by inserting them to the left
+            root.left = insert(root.left, value);
         }
 
         return root;
@@ -92,37 +92,30 @@ public class BinarySearchTree {
             preOrder(root.right);
         }
     }
+
+    //Find duplicates
     public void findDup(Node root){
         HashSet <Integer> set = new HashSet<>();
         ArrayList <Integer> list = new ArrayList<>();
         findDup(root,set,list);
         System.out.println(list);
-        // if(root==null){
-        //     return;
-        // }
-        // findDup(root.left);
-        // if(root!=null){
-        //     findDup(root.left);
-        //     if(set.contains(root.key)){
-        //         list.add(root.key);
-        //     }else{
-        //         set.add(root.key);
-        //     }
-        //     findDup(root.right);
-        // }
     }
     public void findDup(Node root, HashSet <Integer> set,ArrayList <Integer> list ){
         if(root==null){
             return ;
         }
-        findDup(root.left);
-        if(set.contains(root.key)){
+        findDup(root.left,set,list);
+        System.out.println("Checking: " + root.key);
+        // if(!set.contains(root.key)){
+        //     list.add(root.key);
+        //     set.add(root.key);
+        // }else{
+        //     set.add(root.key);
+        // }
+        if (!set.add(root.key)) {
             list.add(root.key);
-            set.add(root.key);
-        }else{
-            set.add(root.key);
         }
-        findDup(root.right);
+        findDup(root.right,set,list);
     }
 
 }

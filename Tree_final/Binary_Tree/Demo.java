@@ -2,11 +2,11 @@ package Tree_final.Binary_Tree;
 
 public class Demo {
     public static void main(String[] args) {
-        BinaryTree tree = new BinaryTree(21);
-        tree.insertLeft(tree.root,9);
-        tree.insertRight(tree.root, 6);
+        BinaryTree tree = new BinaryTree(38);
+        tree.insertLeft(tree.root,27);
+        tree.insertRight(tree.root, 25);
 
-        tree.insertLeft(tree.root.left, 23);
+        tree.insertLeft(tree.root.left, 20);
         tree.insertRight(tree.root.left, 18);
         tree.insertLeft(tree.root.left.left, 12);
         tree.insertRight(tree.root.left.left, 12);
