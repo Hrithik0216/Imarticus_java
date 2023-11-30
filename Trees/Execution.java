@@ -19,10 +19,11 @@ public class Execution {
         // tree.PreOrder(tree.ob);
         // System.out.println("The height of the tree is");
         // System.out.println(tree.height(tree.ob));
-        tree.PreOrder(tree.ob);
-        System.out.println("---------");
-        tree.mirror(tree.ob);
-        System.out.println("---------");
-        tree.PreOrder(tree.ob);
+        // tree.PreOrder(tree.ob);
+        // System.out.println("---------");
+        // tree.mirror(tree.ob);
+        // System.out.println("---------");
+        // tree.PreOrder(tree.ob);
+        System.out.println(tree.search(tree.ob, 11));
     }
 }

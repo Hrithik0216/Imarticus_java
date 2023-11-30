@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Demo",
+            "request": "launch",
+            "mainClass": "Tree_final.Binary_search_tree.Demo",
+            "projectName": "Imarticus vs code_b5c916ca"
+        },
+        {
+            "type": "java",
             "name": "QuickSort",
             "request": "launch",
             "mainClass": "Recursion.QuickSort",

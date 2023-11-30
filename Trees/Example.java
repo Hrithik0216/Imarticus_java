@@ -42,12 +42,18 @@ public class Example {
 
         // ob.right.right.left.right.right = new TreeNode(1);
         // ob.right.right.left.right.right.right = new TreeNode(3);
-        ob = new TreeNode(3);
-        ob.left = new TreeNode(8);
-        ob.right = new TreeNode(7);
-        ob.right.left = new TreeNode(9);
-        ob.right.right = new TreeNode(1);
-        ob.right.left.left = new TreeNode(2);
+        ob = new TreeNode(21);
+        ob.left = new TreeNode(9);
+        ob.right = new TreeNode(6);
+        ob.left.left = new TreeNode(23);
+        ob.left.right = new TreeNode(18);
+        ob.left.left.left = new TreeNode(12);
+        ob.left.left.right = new TreeNode(13);
+        ob.right.left = new TreeNode(7);
+        ob.right.right = new TreeNode(16);
+        ob.right.left.left = new TreeNode(17);
+        ob.right.right.right = new TreeNode(15);
+        ob.right.right.right.left = new TreeNode(11);
 
         return ob;
     }
@@ -79,30 +85,41 @@ public class Example {
         }
     }
 
-    public int height(Example.TreeNode root) {
-        if (root == null) {
-            return 0;
-        }
-        int leftHeight = height(root.left);
-        int rightHeight = height(root.right);
+    // public int height(Example.TreeNode root) {
+    // if (root == null) {
+    // return 0;
+    // }
+    // int leftHeight = height(root.left);
+    // int rightHeight = height(root.right);
 
-        return Math.max(leftHeight, rightHeight) + 1;
+    // return Math.max(leftHeight, rightHeight) + 1;
+    // }
+    public Boolean search(TreeNode root, int value) {
+        if (root == null) {
+            return false;
+        }
+        if (root.data == value) {
+
+            return true;
+        } else {
+            return search(root.left, value) || search(root.right, value);
+        }
     }
 
-    public TreeNode mirror(Example.TreeNode root) {
-        if (root == null) {
-            return root;
-        }
+    // public TreeNode mirror(Example.TreeNode root) {
+    // if (root == null) {
+    // return root;
+    // }
 
-        // Mirror the left and right subtrees and get their heights
-        TreeNode leftHeight = mirror(root.left);
-        TreeNode rightHeight = mirror(root.right);
+    // // Mirror the left and right subtrees and get their heights
+    // TreeNode leftHeight = mirror(root.left);
+    // TreeNode rightHeight = mirror(root.right);
 
-        Example.TreeNode temp = root.left;
-        root.left = root.right;
-        root.right = temp;
+    // Example.TreeNode temp = root.left;
+    // root.left = root.right;
+    // root.right = temp;
 
-        return root;
-    }
+    // return root;
+    // }
 
 }
