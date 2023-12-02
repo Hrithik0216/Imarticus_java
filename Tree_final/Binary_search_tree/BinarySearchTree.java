@@ -4,11 +4,11 @@ import java.util.ArrayList;
 import java.util.HashSet;
 
 public class BinarySearchTree {
-    Node root;
+   private Node root;
     
     
 
-    class Node {
+    private class Node {
         int key;
         Node right, left;
 
@@ -18,7 +18,7 @@ public class BinarySearchTree {
             this.right = null;
         }
     }
-
+    //constructor
     public BinarySearchTree(int value) {
         this.root = new Node(value);
     }
@@ -26,13 +26,20 @@ public class BinarySearchTree {
     public BinarySearchTree() {
         this.root = null;
     }
-
-    public void insert(int value) {
-        insert(root, value);
+    //encapsulation
+    public void setRoot(Node root) {
+        this.root = root;
+    }
+    public Node getRoot() {
+        return root;
     }
 
+    
     // Insertion
-    public Node insert(Node root, int value) {
+    public void insert(int value) {
+        setRoot(insert(getRoot(), value));
+    }
+    private Node insert(Node root, int value) {
         if (root == null) {
             return new Node(value);
         }
@@ -69,6 +76,9 @@ public class BinarySearchTree {
     //     }
     // }
 
+    public void inOrder() {
+        inOrder(getRoot());
+    }
     public void inOrder(Node root) {
         if (root != null) {
             inOrder(root.left);
@@ -77,6 +87,9 @@ public class BinarySearchTree {
         }
     }
 
+    public void postOrder(){
+        postOrder(getRoot());
+    }
     public void postOrder(Node root) {
         if (root != null) {
             postOrder(root.left);
@@ -85,6 +98,9 @@ public class BinarySearchTree {
         }
     }
 
+    public void preOrder(){
+        preOrder(getRoot());
+    }
     public void preOrder(Node root) {
         if (root != null) {
             System.out.println(root.key);
@@ -97,10 +113,10 @@ public class BinarySearchTree {
     public void findDup(Node root){
         HashSet <Integer> set = new HashSet<>();
         ArrayList <Integer> list = new ArrayList<>();
-        findDup(root,set,list);
+        findDup(getRoot(),set,list);
         System.out.println(list);
     }
-    public void findDup(Node root, HashSet <Integer> set,ArrayList <Integer> list ){
+    private void findDup(Node root, HashSet <Integer> set,ArrayList <Integer> list ){
         if(root==null){
             return ;
         }

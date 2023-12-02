@@ -30,12 +30,12 @@ public class Demo {
         // System.out.println(bst.search(bst.root,15));
 
         System.out.println("Postorder: ");
-        bst.postOrder(bst.root);
+        bst.postOrder(bst.getRoot());
 
         System.out.println("Preorder: ");
-        bst.preOrder(bst.root);
+        bst.preOrder(bst.getRoot());
 
         System.out.println("!!! In BST, inorder prints the tree elements in ascending order !!!");
-        bst.inOrder(bst.root);
+        bst.inOrder(bst.getRoot());
     }
 }
