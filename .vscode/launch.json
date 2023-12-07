@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Subset",
+            "request": "launch",
+            "mainClass": "Subset",
+            "projectName": "Imarticus vs code_b5c916ca"
+        },
+        {
+            "type": "java",
+            "name": "CombinationSum",
+            "request": "launch",
+            "mainClass": "CombinationSum",
+            "projectName": "Imarticus vs code_b5c916ca"
+        },
+        {
+            "type": "java",
             "name": "Demo",
             "request": "launch",
             "mainClass": "Tree_final.Binary_search_tree.Demo",

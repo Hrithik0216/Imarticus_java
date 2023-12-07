@@ -1,6 +1,4 @@
 package WeekendPractise;
-
-import java.util.Scanner;
 class Hrithik{
     public String changeCase(String s) {
         char ch = ' ';

@@ -17,7 +17,6 @@ public class PalindromeLogic {
         return PalinArray;
     }
      public static boolean isPalindrome(String st){
-        StringBuffer sb = new StringBuffer(st);
         String rev = "";
         int len = st.length();
         for(int i=(len-1);i>=0;i--){
