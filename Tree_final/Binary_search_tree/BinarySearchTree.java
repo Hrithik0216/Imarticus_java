@@ -6,7 +6,7 @@ import java.util.HashSet;
 public class BinarySearchTree {
     private Node root;
 
-    private class Node {
+    class Node {
         int key;
         Node right, left;
 
@@ -40,7 +40,7 @@ public class BinarySearchTree {
         return root;
     }
 
-    // Insertion
+    //Insertion
     public void insert(int value) {
         setRoot(insert(getRoot(), value));
     }
@@ -58,6 +58,29 @@ public class BinarySearchTree {
 
         return root;
     }
+    //Error in LCA
+        //Lowest common ancestor
+        public Node lowestCommonAncestor(int p, int q) {
+            return lowestCommonAncestor(getRoot(), new Node(p), new Node(q));
+        }
+    
+        public Node lowestCommonAncestor(Node root, Node p, Node q) {
+            //base case
+            if(root == null || root.key == p.key || root.key == q.key){
+                return root;
+            }
+            Node left = lowestCommonAncestor(root.left, p, q);
+            Node right = lowestCommonAncestor(root.right, p, q);
+    
+            //result
+            if(left==null){
+                return right;
+            }else if(right==null){
+                return left;
+            }else{
+                return root;
+            }
+        }
 
     // Searching
     public Node search(Node root, int value) {

@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "ConcatArray",
+            "request": "launch",
+            "mainClass": "ConcatArray",
+            "projectName": "Imarticus vs code_b5c916ca"
+        },
+        {
+            "type": "java",
+            "name": "HeapMain",
+            "request": "launch",
+            "mainClass": "Heap.HeapMain",
+            "projectName": "Imarticus vs code_b5c916ca"
+        },
+        {
+            "type": "java",
             "name": "Subset",
             "request": "launch",
             "mainClass": "Subset",

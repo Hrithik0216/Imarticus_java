@@ -10,7 +10,11 @@ public class Executable2 {
         list.insertFirst(45);
         list.inserLast(77);
         list.inserLast(78);
+        // list.display();
+        list.sortList();
+        System.out.println("Sorted List: ");
         list.display();
         //list.displayRev();
+
     }
 }
