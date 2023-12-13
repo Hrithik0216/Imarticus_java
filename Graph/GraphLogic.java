@@ -1,9 +1,12 @@
 package Graph;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.Queue;
+import java.util.Stack;
 
 public class GraphLogic {
-    ArrayList<Edges> edges = new ArrayList<Edges>();
+    ArrayList<Edges> list = new ArrayList<Edges>();
     int vertices;
 
     public GraphLogic(int vertices) {
@@ -11,11 +14,59 @@ public class GraphLogic {
     }
     public void addEdge(int source, int destination){
         Edges edge = new Edges(source, destination);
-        edges.add(edge);
+        list.add(edge);
     }
+
+    //DFS
+     public void dfs(int startVertex) {
+        boolean[] visited = new boolean[vertices];
+        Stack<Integer> stack = new Stack<>();
+
+        visited[startVertex] = true;
+        stack.add(startVertex);
+
+        System.out.println("DFS Traversal:");
+
+        while (!stack.isEmpty()) {
+            int currentVertex = stack.pop();
+            System.out.print(currentVertex + " ");
+
+            for (Edges edge : list) {
+                if (edge.getSource() == currentVertex && !visited[edge.getDestination()]) {
+                    visited[edge.getDestination()] = true;
+                    stack.add(edge.getDestination());
+                }
+            }
+        }
+    }
+
+    //bfs
+    public void bfs (int start){
+        Queue<Integer> queue = new LinkedList<>();
+        boolean [] visited = new boolean[vertices];
+
+        visited[start] = true;
+        queue.add(start);
+
+        System.out.println("The BFS is ");
+        while(!queue.isEmpty()){
+            int current = queue.poll();
+            System.out.print(current + " ");
+
+            for(Edges edge: list){
+                if(edge.getSource()==current && ! visited[edge.getDestination()]){
+                    visited[edge.getDestination()] = true;
+                    queue.add(edge.getDestination());
+                }
+            }
+        }
+
+
+    }
+
     public void display(){
         System.out.println("Graph Edges:");
-        edges.forEach(edge -> {
+        list.forEach(edge -> {
             System.out.println(edge.getSource() + " -> " + edge.getDestination());
         });
     }
