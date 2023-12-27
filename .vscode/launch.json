@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Skip_a_character",
+            "request": "launch",
+            "mainClass": "Recursion_for_Strings.Skip_a_character",
+            "projectName": "Imarticus vs code_b5c916ca"
+        },
+        {
+            "type": "java",
+            "name": "QuickSort",
+            "request": "launch",
+            "mainClass": "Algorithm.QuickSort",
+            "projectName": "Imarticus vs code_b5c916ca"
+        },
+        {
+            "type": "java",
+            "name": "ConsecutiveOne",
+            "request": "launch",
+            "mainClass": "ConsecutiveOne",
+            "projectName": "Imarticus vs code_b5c916ca"
+        },
+        {
+            "type": "java",
             "name": "ProductOfArrayItself",
             "request": "launch",
             "mainClass": "ProductOfArrayItself",
