@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Permutations",
+            "request": "launch",
+            "mainClass": "Recursion_for_Strings.Permutations",
+            "projectName": "Imarticus vs code_b5c916ca"
+        },
+        {
+            "type": "java",
             "name": "Subset",
             "request": "launch",
             "mainClass": "Recursion_for_Strings.Subset",
