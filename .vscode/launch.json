@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Subset",
+            "request": "launch",
+            "mainClass": "Recursion_for_Strings.Subset",
+            "projectName": "Imarticus vs code_b5c916ca"
+        },
+        {
+            "type": "java",
             "name": "SubSequence",
             "request": "launch",
             "mainClass": "Recursion_for_Strings.SubSequence",
