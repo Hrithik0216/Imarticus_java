@@ -5,7 +5,7 @@ import java.util.List;
 
 public class Subset {
     public static void main(String[] args) {
-        int[] arr = { 1, 2, 3 };
+        int[] arr = { 1, 2};
         System.out.println(subSet(arr));
     }
 
@@ -19,6 +19,10 @@ public class Subset {
         for(int i=index; i< arr.length;i++){
             temp.add(arr[i]);
             backTrack(finalList, temp, arr, i+1);
+            System.out.println(temp);
+            // for(int k: temp){
+            //     System.out.println(k);
+            // }
             temp.remove(temp.size()-1);
         }
     }
