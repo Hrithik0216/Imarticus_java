@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "PermutationsNumArr",
+            "request": "launch",
+            "mainClass": "Recursion_for_Strings.PermutationsNumArr",
+            "projectName": "Imarticus vs code_b5c916ca"
+        },
+        {
+            "type": "java",
+            "name": "DecodeString",
+            "request": "launch",
+            "mainClass": "WeekendPractise.DecodeString",
+            "projectName": "Imarticus vs code_b5c916ca"
+        },
+        {
+            "type": "java",
             "name": "Permutations",
             "request": "launch",
             "mainClass": "Recursion_for_Strings.Permutations",
